@@ -26,11 +26,11 @@ For more information and setup, read the official documentation: https://code.vi
 
 The `Dockerfile` contains the following:
 
-1. An image, based on `nixos/nix`, an Alpine image that contains the [Nix package manager](https://nixos.org/nix/)
-2. Configuration for [Cachix](https://cachix.org/) - a binary cache for Nix
-3. Glasgow Haskell Compiler (GHC) version 8.6.5
-4. HIE ([haskell-ide-engine](https://github.com/haskell/haskell-ide-engine)) for GHC 8.6.5
-5. A script to install some additional tools (such as git), as well as configuring a special user `vscode` to allow access from VSCode.
+1. An image, based on [`hmemcpy/hie`](https://hub.docker.com/r/hmemcpy/hie), an Alpine image that contains the [Nix package manager](https://nixos.org/nix/), as well as the following:
+   * Configuration for [Cachix](https://cachix.org/) - a binary cache for Nix
+   * Glasgow Haskell Compiler (GHC) version 8.6.5
+   * HIE ([haskell-ide-engine](https://github.com/haskell/haskell-ide-engine)) for GHC 8.6.5
+2. A script to install some additional tools (such as git), as well as configuring a special user `vscode` to allow access from VSCode.
 
 The `devcontainer.json` has some additional configuration for VSCode, in particular, the required extensions that have to be installed, and the name of the remote user (must match the one in the `Dockerfile`).
 
