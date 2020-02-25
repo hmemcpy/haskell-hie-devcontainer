@@ -12,9 +12,9 @@ nix:
 # See https://docs.haskellstack.org/en/stable/yaml_configuration/#templates
 templates:
   params:
-    author-name: Pavel Shirshov
-    author-email: pshirshov@gmail.com
-    github-username: pshirshov
+    author-name: Stack User
+    author-email: stack.user@gmail.com
+    github-username: stack.user
 #    copyright:
 
 # The following parameter specifies stack's output styles; STYLES is a
