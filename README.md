@@ -1,3 +1,5 @@
+# Update: there is now an [official DevContainer](https://github.com/haskell/docker-haskell/issues/41) image for HIE, please use it instead! 🙏
+
 ## DevContainer for HIE (Haskell IDE Engine)
 
 ### What is this?
